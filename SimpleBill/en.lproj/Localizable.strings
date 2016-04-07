@@ -1,0 +1,104 @@
+/*
+ Localizable.strings
+ SimpleBill
+
+ Created by Marike Jave on 15/4/7.
+ Copyright (c) 2015年 Marike Jave. All rights reserved.
+ */
+
+"label.bundle.display.name"="Simple Bill";
+"label.back"="Back";
+"label.bill"="Bill Preview";
+"label.january"="Jan";
+"label.december"="Dec";
+"label.annual.monthly.bill"="Monthly Trend";
+"label.china"="China";
+"label.unit"="";
+"label.month.1"="January";
+"label.month.2"="February";
+"label.month.3"="March";
+"label.month.4"="April";
+"label.month.5"="May";
+"label.month.6"="June";
+"label.month.7"="July";
+"label.month.8"="August";
+"label.month.9"="September";
+"label.month.10"="October";
+"label.month.11"="November";
+"label.month.12"="December";
+"label.unselect.month"="Unselect Month";
+"label.unselect.user"="Unselect User";
+"label.annual.user.bill"="Month Bill";
+"label.date.due"="As of";
+"label.average.weight.input.remain"="Average：%.1f \nWeight  ：%ld \nIncome ：%.1f \nRemain ：%.1f";
+"label.this.month"="This Month";
+"label.last.month"="Last Month";
+"label.last.last.month"="Last Last Month";
+"label.income"="Income";
+"label.expend"="Expend";
+"label.unknwon"="Unknown";
+"label.select.category"="Select Category";
+"label.all.category"="All Categories";
+"label.delete"="Delete";
+"label.edit"="Edit";
+"label.times"="%lu Times";
+"label.year.month.year.month"="%ld/%ld-%ld/%ld ";
+"label.year"="%ld ";
+"label.month"="%ld ";
+"label.year.month.month"="%ld/%ld-%ld ";
+"label.year.month"="%ld/%ld ";
+"label.all"="All ";
+"label.bills"="Bills";
+"label.add"="Add";
+"label.category.info"="Category Info";
+"label.category.name.can.not.be.empty"="Category name can't be empty!";
+"label.clear.failed"="Clear Failed!";
+"label.category.name"="Category Name";
+"label.none"="None";
+"label.pay.way"=" Payment";
+"label.name.can.not.be.empty"="Name can't be empty!";
+"label.member.info"=" Member Info";
+"label.weigth.must.be.greater.than.zero"="Weigth must be greater than 0";
+"label.member.name"="Member Name";
+"label.weight"="Weight";
+"label.month.income"="Income";
+"label.month.expend"="Expend";
+"label.richer"="Richer ";
+"label.pauper"="Pauper";
+"label.application.description"="Simple Bill - The most simple bill application in the history! download : http://114.215.96.34/simplebill/download.html";
+"label.please.select.member"="Please select member!";
+"label.please.select.pay.way"="Please select Peyment!";
+"label.please.select.category"="Please select expend category!";
+"label.price.must.be.greater.than.zero"="Price must be greater than 0!";
+"label.select.pay.way"="Select Peyment";
+"label.all.pay.way"="All Peyment";
+"label.management"="Management";
+"label.all.bills"="All Bills";
+"label.member.composition"="Member Composition";
+"label.expend.category"="Expend Category";
+"label.pay.ways"="Payments";
+"label.go.to.praise"="Go to praise";
+"label.author"="Author";
+"label.select.member"="Select Member";
+"label.all.member"="All Member";
+"label.last.month.balance"="The balance from last month";
+"label.member.unjoin"="Member didn't join before";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

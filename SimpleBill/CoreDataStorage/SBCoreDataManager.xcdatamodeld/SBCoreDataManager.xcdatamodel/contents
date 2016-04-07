@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14D136" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="SBBill" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lock" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="mark" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="billKind" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SBBillKind" inverseName="bills" inverseEntity="SBBillKind" syncable="YES"/>
+        <relationship name="payWay" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SBPayWay" inverseName="bills" inverseEntity="SBPayWay" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SBUser" inverseName="bills" inverseEntity="SBUser" syncable="YES"/>
+    </entity>
+    <entity name="SBBillKind" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parentId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="bills" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SBBill" inverseName="billKind" inverseEntity="SBBill" syncable="YES"/>
+        <relationship name="parentBillKind" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SBBillKind" inverseName="subBillKinds" inverseEntity="SBBillKind" syncable="YES"/>
+        <relationship name="subBillKinds" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SBBillKind" inverseName="parentBillKind" inverseEntity="SBBillKind" syncable="YES"/>
+    </entity>
+    <entity name="SBMonthBill" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="SBPayWay" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="bills" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SBBill" inverseName="payWay" inverseEntity="SBBill" syncable="YES"/>
+    </entity>
+    <entity name="SBUser" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isManager" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="bills" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SBBill" inverseName="user" inverseEntity="SBBill" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="SBBill" positionX="-63" positionY="-45" width="128" height="180"/>
+        <element name="SBBillKind" positionX="187" positionY="-36" width="128" height="150"/>
+        <element name="SBMonthBill" positionX="178" positionY="-153" width="128" height="103"/>
+        <element name="SBPayWay" positionX="-27" positionY="-216" width="128" height="105"/>
+        <element name="SBUser" positionX="250" positionY="77" width="128" height="135"/>
+    </elements>
+</model>

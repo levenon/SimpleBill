@@ -1,0 +1,6 @@
+framework module XLFKeyboardManagerKit {
+  umbrella header "XLFKeyboardManagerKit.h"
+
+  export *
+  module * { export * }
+}
