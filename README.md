@@ -1,0 +1,2 @@
+# SimpleBill
+CoreData
